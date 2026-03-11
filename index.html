@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frfr Admin | E-Commerce Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i data-lucide="shopping-bag"></i>
+                <span>frfr Store</span>
+            </div>
+            <nav>
+                <a href="#" class="active"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+                <a href="#"><i data-lucide="package"></i> Products</a>
+                <a href="#"><i data-lucide="shopping-cart"></i> Orders</a>
+                <a href="#"><i data-lucide="users"></i> Customers</a>
+                <a href="#"><i data-lucide="bar-chart-3"></i> Analytics</a>
+                <a href="#"><i data-lucide="settings"></i> Settings</a>
+            </nav>
+            <div class="user-profile">
+                <img src="https://ui-avatars.com/api/?name=Admin+User&background=6366f1&color=fff" alt="Profile">
+                <div class="user-info">
+                    <strong>Admin User</strong>
+                    <span>Super Admin</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search orders, customers...">
+                </div>
+                <div class="actions">
+                    <button class="btn-icon"><i data-lucide="bell"></i><span class="dot"></span></button>
+                    <button class="btn-primary">+ Add Product</button>
+                </div>
+            </header>
+
+            <section class="content-wrapper">
+                <h1>Dashboard Overview</h1>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon purple"><i data-lucide="dollar-sign"></i></div>
+                        <div class="stat-data">
+                            <span>Total Revenue</span>
+                            <h2>Rs.128,430</h2>
+                            <small class="trend up">↑ 12% vs last month</small>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon blue"><i data-lucide="shopping-bag"></i></div>
+                        <div class="stat-data">
+                            <span>Total Orders</span>
+                            <h2>1,420</h2>
+                            <small class="trend up">↑ 8% vs last month</small>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon orange"><i data-lucide="users"></i></div>
+                        <div class="stat-data">
+                            <span>New Customers</span>
+                            <h2>324</h2>
+                            <small class="trend down">↓ 2% vs last month</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <div class="chart-card glass">
+                        <h3>Sales Revenue (Monthly)</h3>
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="table-container glass">
+                    <div class="table-header">
+                        <h3>Recent Orders</h3>
+                        <button class="btn-outline">View All</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderTableBody">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
