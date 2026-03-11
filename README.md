@@ -1,6 +1,13 @@
 # E-Commerce Admin Dashboard
 
  frfr is a modern, responsive, and user-friendly administrative interface designed for e-commerce platforms. Built with a "performance-first" mindset using vanilla technologies, it provides a seamless experience for managing sales, orders, and customer data.
+ 
+---
+
+PREVIEW
+https://prashantstha01.github.io/e-commerce-dashboard/
+
+---
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
@@ -22,6 +29,5 @@
 - **Icons:** [Lucide Icons](https://lucide.dev/)
 - **Charts:** [Chart.js](https://www.chartjs.org/)
 
-##  Preview
-> *Tip: You can add a screenshot of your dashboard here!*
+
 
